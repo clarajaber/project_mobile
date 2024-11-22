@@ -211,7 +211,7 @@ void showCurrencyTransferDialog(BuildContext context) {
                       ),
                     ),
                     const SizedBox(height: 16),
-                    // Input for the amount
+                    
                     TextField(
                       controller: amountController,
                       keyboardType: TextInputType.number,
@@ -419,7 +419,6 @@ Route _createRoute(Destination destination) {
 
       var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
       var offsetAnimation = animation.drive(tween);
-
       return SlideTransition(
         position: offsetAnimation,
         child: child,
@@ -430,7 +429,6 @@ Route _createRoute(Destination destination) {
 
 class AttractionDetailScreen extends StatelessWidget {
   final Destination destination;
-
   const AttractionDetailScreen({required this.destination, super.key});
 
   @override
