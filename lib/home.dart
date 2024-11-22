@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-// Model for Destination
 class Destination {
   final String name;
   final String description;
@@ -15,7 +14,6 @@ class Destination {
   });
 }
 
-// Home Screen with Creative Style
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -142,7 +140,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 }
 
-// Currency Transfer Dialog
 void showCurrencyTransferDialog(BuildContext context) {
   final TextEditingController amountController = TextEditingController();
   final TextEditingController feeController = TextEditingController();
@@ -232,7 +229,6 @@ void showCurrencyTransferDialog(BuildContext context) {
                       ),
                     ),
                     const SizedBox(height: 16),
-                    // Dropdowns for From and To currencies
                     Row(
                       children: [
                         Expanded(
@@ -289,7 +285,6 @@ void showCurrencyTransferDialog(BuildContext context) {
                       ],
                     ),
                     const SizedBox(height: 16),
-                    // Input for the fee
                     TextField(
                       controller: feeController,
                       keyboardType: TextInputType.number,
@@ -307,7 +302,7 @@ void showCurrencyTransferDialog(BuildContext context) {
                       ),
                     ),
                     const SizedBox(height: 16),
-                    // Display the calculated amount
+                    
                     if (totalAmount > 0)
                       Text(
                         'Total: ${totalAmount.toStringAsFixed(2)} $toCurrency',
@@ -352,7 +347,6 @@ void showCurrencyTransferDialog(BuildContext context) {
 }
 
 
-// DestinationCard
 class DestinationCard extends StatelessWidget {
   final Destination destination;
 
@@ -414,7 +408,6 @@ class DestinationCard extends StatelessWidget {
   }
 }
 
-// Slide Transition for Detail Screen
 Route _createRoute(Destination destination) {
   return PageRouteBuilder(
     pageBuilder: (context, animation, secondaryAnimation) =>
