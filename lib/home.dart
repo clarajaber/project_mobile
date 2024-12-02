@@ -191,7 +191,7 @@ void showCurrencyTransferDialog(BuildContext context) {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    // Dialog Header
+                    
                     Container(
                       width: double.infinity,
                       padding: const EdgeInsets.symmetric(vertical: 16.0),
@@ -313,7 +313,7 @@ void showCurrencyTransferDialog(BuildContext context) {
                         ),
                       ),
                     const SizedBox(height: 16),
-                    // Close Button
+                   
                     ElevatedButton(
                       onPressed: () => Navigator.of(context).pop(),
                       style: ElevatedButton.styleFrom(
