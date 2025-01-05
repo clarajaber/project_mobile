@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'login_screen.dart';
 
 void main() {
-  runApp(const TourismApp());
+  runApp(const ClaraApp());
 }
 
-class TourismApp extends StatelessWidget {
-  const TourismApp({super.key});
+class ClaraApp extends StatelessWidget {
+  const ClaraApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Hidden Gems of Lebanon',
+      title: 'Clara',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.teal,
       ),
-      home: const HomeScreen(),
+      home: const LoginScreen(),
     );
   }
 }
